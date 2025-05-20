@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: blue;
+            background-color: aqua;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        table,
+        th,
+        td 
+        {
+            border: 1px solid blue;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>
+        exemplo 2
+    </h1>
+    <p>
+        Neste exemplo vamos continuar estudando tabelas, mas vamos mesclar as células.
+    </p>
+    <table>
+        <tr>
+            <th>Nome do Aluno</th>
+            <th>Disciplina</th>
+            <th>nota</th>
+            <th>falta</th>
+        </tr>
+        <tr>
+            <td>Guilherme</td>
+            <td>Portugues</td>
+            <td>MB</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>Matematica</td>
+            <td>B</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Felipe</td>
+            <td colspan="3"> Aluno nao matriculado</td>
+        </tr>
+        <tr>
+            <td colspan="2">Helena da Silva Souza</td>
+            <td colspan="2">Nao avaliado</td>
+        </tr>
+        <tr>
+            <td colspan="4">Aluno não matriulado</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Ana Julia</td>
+            <td>Geografia</td>
+            <td>MB </td>
+            <td>5</td>
+
+        </tr>
+        <tr>
+            <td style="color: red;">Historia</td>
+            <td>B</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td style="color: blueviolet;">Lucas</td>
+            <td rowspan="2">Matematica</td>
+            <td>MB</td>
+            <td rowspan="2">3</td>
+        </tr>
+        <tr>
+            <td>Luiz</td>
+            
+            <td>B</td>
+
+        </tr>
+
+
+
+
+
+    </table>
+</body>
+
+</html>
