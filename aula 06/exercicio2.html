@@ -1,63 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1
-        {
-            color: blueviolet;
-            background-color: white;
+        h1 {
+            color: white;
+            background-color: blueviolet;
             text-align: center;
             border: 2px solid purple;
         }
+
         table,
         th,
-         td
-         {
-           border: 1px solid purple; 
-           border-collapse: collapse;
-           padding: 5px;
-         }
+        td {
+            border: 1px solid purple;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        th {
+            background-color: purple;
+        }
+
+        .tabela1 table,
+        th,
+        td {
+            border: 1px solid purple;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        .tabela1 th {
+            background-color: rgb(84, 78, 153);
+        }
     </style>
 </head>
+
 <body>
     <h1>Exercicio 2</h1>
-    <p> <u>Exercicio de colspan</u></p>
+    <div class="tabela1">
+        <p> <u>Exercicio de colspan</u></p>
+        <table>
+            <tr>
+                <th>Dia da semana</th>
+                <th>Turma</th>
+                <th>aula 1</th>
+                <th>aula 2</th>
+                <th>aula 3</th>
+                <th>aula 4</th>
+                <th>aula 5</th>
+                <th>aula 6</th>
+            </tr>
+            <tr>
+                <td>Segunda</td>
+                <td>a/b</td>
+                <td colspan="2">iw</td>
+                <td>eacnt</td>
+                <td>ad/apw</td>
+                <td>física</td>
+                <td>ad/pa</td>
+            </tr>
+            <tr>
+                <td>Terça</td>
+                <td>a/b</td>
+                <td>português</td>
+                <td colspan="2">pe</td>
+                <td>física</td>
+                <td colspan="2">inglês</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>a/b</td>
+                <td colspan="2">português</td>
+                <td colspan="2">fi/pa</td>
+                <td colspan="2">pa/fi</td>
+            </tr>
+        </table>
+    </div>
+    <p> <u> Exercicio de rowspan e colspan </u></p>
     <table>
         <tr>
-            <td>Dia da semana</td>
-            <td>Turma</td>
-            <td>aula 1</td>
-            <td>aula 2</td>
-            <td>aula 3</td>
-            <td>aula 4</td>
-            <td>aula 5</td>
-            <td>aula 6</td>
+            <th>Dia da semana</th>
+            <th>Turma</th>
+            <th>aula 1</th>
+            <th>aula 2</th>
+            <th>aula 3</th>
+            <th>aula 4</th>
+            <th>aula 5</th>
+            <th>aula 6</th>
         </tr>
         <tr>
-            <td>Segunda</td>
-            <td>a/b</td>
-            <td>iw</td>
-            <td>eacnt</td>
-            <td>ad/apw</td>
-            <td>física</td>
-            <td>ad/pa</td>
+            <td rowspan="2">domingo</td>
+            <td>a</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td>Terça</td>
-            <td>a/b</td>
-            <td>português</td>
-            <td>pe</td>
-            <td>física</td>
-            <td>inglês</td>
+            <td>b</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td>Quarta</td>
-            <td>a/b</td>
-            <td>português</td>
+            <td rowspan="2">Segunda</td>
+            <td>a</td>
+            <td colspan="2">Guilherme</td>
+            <td>Vagner</td>
+            <td>Rafel</td>
+            <td rowspan="2"> Vagner</td>
+            <td>Rafael</td>
+
+        </tr>
+        <tr>
+            <td>b</td>
+            <td colspan="2">Andricson</td>
+            <td>Janet</td>
+            <td>Ronaldo</td>
+            <td>Andricson</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Terça</td>
+            <td>a</td>
+            <td rowspan="2">Isabela</td>
+            <td rowspan="2" colspan="2">Jaqueline</td>
+            <td rowspan="2">Vagner</td>
+            <td rowspan="2" colspan="2">Celene</td>
+        </tr>
+
+        <tr>
+            <td>b</td>
         </tr>
     </table>
+
 </body>
+
 </html>
