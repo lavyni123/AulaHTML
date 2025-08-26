@@ -10,12 +10,14 @@
             margin: 5;
             padding: 0;
         }
-        h1{
-           background-color: blue;
+        .oi{
+           background-color: rgb(126, 126, 255);
            color: white; 
-           margin: 10px;
            padding: 30px;
            text-align: center;
+           font-size: 15px;
+           font-weight: bold;
+
 
         }
 h2
@@ -47,11 +49,34 @@ p
     border: 1px solid black;
     margin: 10px;
 }
-
+th,td,tr,table
+{
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.cor
+{
+    background-color: rgb(166, 109, 219);
+}
+.titulo
+{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+}
     </style>
 </head>
 <body>
-    <h1>Página de exercicios de CSS</h1>
+    <p class="oi">
+    <span class="titulo">Página de exercicios de CSS</span>
+    <br>
+     <a href="#">Inicio</a>
+     <a href="#">sobre</a>
+     <a href="#">contato</a>
+   </p>
+
     <h2>1. Parágrafos e Cores</h2>
     <p>
         Este é um paragrafo simples para aplicar cor, margem, padding e outras propriedades CSS.
@@ -68,6 +93,24 @@ p
         <li>CSS</li>
         <li>JavaScrip</li>
     </ul>
+    <h2>4.Tabela de estilo</h2>
+    <table class="tablee">
+        <tr>
+            <th class="cor">nome</th>
+            <th class="cor">idade</th>
+            <th class="cor">cidade</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>25</td>
+            <td>São paulo</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>30</td>
+            <td>Rio de Janeiro</td>
+        </tr>
+    </table>
   
 </body>
 </html>
